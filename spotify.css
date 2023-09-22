@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #1DB954;
+    text-align: center;
+    padding: 16px;
+}
+h1{
+    font-size: 42px;
+    padding-top: 12px ;
+}
+
+main {
+    max-width: 950px;
+    margin: 14px auto;
+    padding: 1px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SEARCH BAR */
+#search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 60%;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESULTS TEXT */
+.results-list {
+    list-style: none;
+    padding: 0;
+}
+
+.results-list li {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results-list li strong {
+    font-weight: bold;
+}
+
+.results-list li button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.results-list li button:hover {
+    background-color: #169243;
+}
+
+/* Add these styles to your existing CSS */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.green-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 14%;
+    min-height: 0;
+}
+
+.green-button:hover {
+    background-color: #169243;
+}
+
+/* RESULTS IMAGES */
+.result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(23% - 12px); /* 4 lines with 4 boxes in each line and spacing */
+}
+
+.result-item img {
+    max-width: 100px;
+    margin-right: 12px;
+}
+
+.result-details {
+    flex-grow: 1;
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* CONTROLLER */
+#now-playing {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1DB954;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+}
+
+#audio-player {
+    width: 100%;
+    max-width: none;
+    display: block;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    box-shadow: none;
+}
+
+#audio-player::-webkit-media-controls-panel {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+#audio-player::-webkit-media-controls-timeline {
+    background-color: white;
+    height: 5px;
+}
+
+#audio-player::-webkit-media-controls-current-time-display,
+#audio-player::-webkit-media-controls-time-remaining-display {
+    font-size: 12px;
+    color: #666;
+}
+
+#audio-player::-webkit-media-controls-volume-slider {
+    width: 100px;
+}
+
+#audio-player::-webkit-media-controls-play-button {
+    color: #1DB954;
+    font-size: 24px;
+}
+
+#audio-player::-webkit-media-controls-mute-button {
+    color: #1DB954;
+}
+
+
+
+ #player {
+        display: none;
+        background-color: black;
+        padding: 16px;
+        text-align: center;
+    }
+
+    #now-playing {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 12px;
+    }
+
+    #audio-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .control-button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 0 8px;
+    }
+
+    .control-button:hover {
+        opacity: 0.8;
+    }
+
+    .control-slider {
+        width: 100px;
+        margin: 0 12px;
+    }
+
+    /* Adjust the appearance of the audio player */
+    #audio-player {
+        width: 100%;
+        max-width: none;
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    /* Custom styles for the volume slider */
+    #volume-slider {
+        width: 100px;
+        height: 8px;
+        background-color: #ccc;
+        border: none;
+        -webkit-appearance: none; /* Remove the default slider appearance in WebKit browsers */
+        border-radius: 4px;
+    }
+
+    #volume-slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Remove the default thumb appearance in WebKit browsers */
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+    }

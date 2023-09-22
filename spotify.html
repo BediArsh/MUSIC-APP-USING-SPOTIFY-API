@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIFY MUSIC</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <header>
+        <h1>SPOTIFY MUSIC</h1>
+    </header>
+    <main>
+<!-- SEARCH BAR -->
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Search for a track or artist">
+            <button id="search-button">Search</button>
+        </section>
+<!-- RESULTS -->
+        <section id="results"> <!--results will appear here--> </section>
+<!-- CONTOLLER PANEL -->
+        <section id="player" style="display: none;">
+            <p id="now-playing"></p>
+            <audio id="audio-player" controls></audio>
+        </section>
+        
+    </main>
+    <script src="spotify.js"></script>
+</body>
+</html>
+
+
+
+
+
